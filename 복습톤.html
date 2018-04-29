@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <script src="jquery-3.3.1.min"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Diary</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <style>
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Gothic+A1');
+
+    a:link {
+      color: white; text-decoration: none;
+    }
+    a:visited {
+      color: white; text-decoration: none;
+    }
+    a:hover {
+      color: black; text-decoration: none;
+    }
+
+      /* h1{
+        font-size: 40pt;
+      } */
+    h2{
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      font-family: "Helvetica",sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo{
+      font-weight: 900;
+      font-size: 20px;
+      float: left;
+      margin-left: 15px;
+      margin-top: 30px;
+      color: white;
+    }
+    .menu{
+      float: right;
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+      font-weight: 700;
+      margin-right:15px;
+
+    }
+
+    .about, .function, .contact{
+      float: left;
+      margin-right: 15px;
+    }
+
+    /* .title{
+      position: absolute;
+      top: 35%;
+    } */
+    /* .title{
+      display: flex;
+      justify-content: center;
+    } */
+    .front_img{
+      height:600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .title{
+      width:100%;
+      color:white;
+      display: flex;
+      justify-content: center;
+    }
+
+    .header_wrap{
+      width: 100%;
+      height: 700px;
+      background-image: url("https://images.unsplash.com/reserve/OQx70jjBSLOMI5ackhxm_urbex-ppc-030.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd5e78a879379a34cbfd0656c50627b3&auto=format&fit=crop&w=1650&q=80");
+    }
+
+/* main */
+    .main_wrap{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrap{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about{
+      text-align: center;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    /* .btn{
+      font-weight: 700;
+      border: 2px solid black;
+      padding: 20px;
+      border-radius: 20%;
+      background-color: rgb(0, 226, 0);
+    } */
+
+    .function{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .first_func, .sec_func, .thir_func{
+      margin: 30px;
+      text-align: center;
+    }
+
+    .img1, .img2, .img3{
+      width: 400px;
+      height: 300px;
+      border-radius: 100%;
+      overflow: hidden;
+    }
+
+
+/* footer */
+    .footer_wrap{
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .contact{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .tele, .email{
+      width: 200px;
+      margin: 30px;
+      text-align: center;
+      margin: 15px;
+    }
+    .material-icons{
+      font-size: 50pt;
+      margin-bottom: 15px;
+
+    }
+
+    @media (min-width: 360px) {
+      h1{
+        font-size: 30px;
+      }
+
+      .function{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      h1{
+        font-size: 40px;
+      }
+
+      .function{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    </style>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".img1, .img2, .img3").mouseover(function(){
+          $(this).animate({
+            'opacity': '50'
+          },900);
+        });
+        $(".img1, .img2, .img3").mouseout(function(){
+          $(this).animate({
+            'opacity': '100'
+          },900);
+        });
+      });
+    </script> -->
+
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="header_wrap clearfix">
+          <div class="logo">Diary</div>
+          <div class="menu">
+            <div class="about"><a href="#about">About</a></div>
+            <div class="function"><a href="#function">Fuction</a></div>
+            <div class="contact"><a href="#contact">Contact</a></div>
+          </div>
+          <div class="front_img">
+            <div class="title"><h1>Travel your life!!</h1></div>
+          </div>
+        </div>
+       <hr>
+      </header>
+
+      <main>
+        <div class="main_wrap">
+
+          <h2 id="about">We've got what you need!</h2>
+          <div class="about">
+            <br>
+            <p>Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+            <br><br>
+            <!-- <a class="btn" href="#function">GET STARTED!</a>
+            <br><br><br> -->
+            <hr>
+          </div>
+
+          <h2 id="function">Fuctions</h2>
+          <div class="function">
+
+            <div class="first_func">
+              <img class="img1"src="http://nthumb.cyworld.com/thumb?width=810&url=http%3A%2F%2Fc2down.cyworld.co.kr%2Fdownload%3Ffid%3D6422315bd91a8a22cf2331c35d0876c0%26name%3D1239718975131801751910485.jpg" alt="">
+              <br><br>
+              <h3>Leave your footprints</h3><br>
+              <p>Let's leave my way on the map.</p>
+            </div>
+
+            <div class="sec_func">
+              <img class="img2"src="사진1.PNG" alt="">
+              <br><br>
+              <h3>Travel to Photos</h3><br>
+              <p>Show the photos you took on your itinerary on the map</p>
+
+            </div>
+
+            <div class="thir_func">
+              <img class="img3" src="https://scontent-lga3-1.cdninstagram.com/vp/5eb65fc34d6e766f802065a749c93de4/5B3CA82B/t51.2885-15/s320x320/e35/26324366_141061930024653_865396765812064256_n.jpg" alt="">
+              <br><br>
+              <h3>Pretty pictures and good writing</h3><br>
+              <p>Let's leave some photos of what we felt while traveling with photos</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+      <footer>
+        <div class="footer_wrap">
+          <hr>
+          <h2 id="contact">Let's Get in Touch!!</h2><br><br><br>
+
+          <div class="contact">
+            <div class="tele">
+              <i class="material-icons">call</i>
+              <p>123-456-789</p>
+            </div>
+
+            <div class="email">
+              <i class="material-icons">email</i>
+              <p>email@gmail.com</p>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+
+    </div>
+  </body>
+</html>
